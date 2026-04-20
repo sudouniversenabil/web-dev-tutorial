@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid green;
+            height: 56vh;
+            display: flex;
+            /* justify-content: start; */
+            align-content: center;
+            /* flex-wrap: wrap; */
+            flex-flow: row;
+            /* row-gap: 7px;
+            column-gap: 9px;
+             */
+             gap: 5px 8px;
+        }
+        .item{
+            height: 40px;
+            width: 40px;
+            /* margin: 5px; */
+            background-color: aquamarine;
+
+
+        }
+
+      .order-1{
+           /* flex-grow: 2; */
+           flex-shrink: 2;
+           align-self: self-end;
+        } 
+
+        /* eita number onujae jaiga nei  */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <!-- <div class="item">5</div> -->
+        <div class="item order-1">5</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item order-1">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item order-1">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">15</div>
+ 
+
+    </div>
+</body>
+</html>

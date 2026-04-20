@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: blueviolet;
+            height: 45vh;
+            width: 45vw;
+        }
+
+        .bn {
+            background-color: rgba(11, 30, 24, 0.182);
+            height: 34px;
+            width: 34px;
+            /* animation-name: my;
+            animation-duration: 5s;
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-direction:alternate-reverse; */
+            /* animation-play-state: paused; */
+            animation: my 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite ,
+                        harry2 3s ease-in-out infinite;
+        }
+
+        @keyframes my {
+            from {
+                background-color: tomato;
+            }
+
+            to {
+                transform: translateX(1000px);
+                background-color: black;
+            }
+        }
+
+        @keyframes harry2 {
+            0% {
+                transform: rotate(100deg);
+            }
+
+            20% {
+                transform: rotate(200deg);
+            }
+
+            50% {
+                transform: rotate(220deg);
+            }
+
+            80% {
+                transform: rotate(300deg);
+            }
+
+            100% {
+                transform: rotate(310deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bn">
+            iam a box
+        </div>
+    </div>
+</body>
+
+</html>

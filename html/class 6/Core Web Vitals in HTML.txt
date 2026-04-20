@@ -1,0 +1,16 @@
+Core Web Vitals in HTML
+
+
+
+what is seo?>>>>>Search Engine Optimisation -->
+ CLS = Cumulative Layout Shift
+ 1️⃣ Image / video-র height–width না দেয়া
+2️⃣ Ads হঠাৎ করে লোড হওয়া
+3️⃣ Web font late load হওয়া
+4️⃣ JS দিয়ে DOM change করা
+
+
+LCP = Largest Contentful Paint
+
+
+FID = First Input Delay

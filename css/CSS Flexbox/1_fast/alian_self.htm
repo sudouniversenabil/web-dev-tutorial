@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            display: flex;
+            height: 200px;
+            background: lightgray;
+            align-items: center;
+            /* সবাই মাঝখানে */
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            background: teal;
+            margin: 5px;
+        }
+
+        .special {
+            align-self: flex-end;
+            /* শুধু এইটা নিচে যাবে */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box special"></div>
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>

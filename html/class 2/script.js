@@ -1,0 +1,1 @@
+alert("hi my fist languafe is python ")

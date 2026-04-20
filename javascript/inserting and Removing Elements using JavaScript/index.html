@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100px;
+            border: 2px solid black;
+        }
+        .red{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="red" style="display: flex;" data-creat="nabil">
+            hey iam nabil
+        </div>
+        <div class="box">
+            hey iam another nabil
+        </div>
+    </div>
+    <script>
+        console.log("this is practice in events")
+        document.querySelector(".container")
+        // this is a innner html and inner text
+
+        let a = document.querySelector(".container").innerText
+        console.log(a)
+
+        let e = document.querySelector(".container").outerHTML
+        console.log(e)
+        document.querySelector(".contaier").tagName
+
+        let div = document.createElement("div")
+        div.innerText = "this is a js html code "
+        div.setAttribute("class", "iam_n")
+        document.querySelector(".container").append(div)
+        let tt = document.querySelector(".container").classList
+        console.log(tt)
+
+    </script>
+</body>
+
+</html>
