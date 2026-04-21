@@ -18,34 +18,42 @@
 
 // console.log(rabbit)
 
-class animal{
-    constructor(name){
-        this.nam=name
+class animal {
+    constructor(name) {
+        this.nam = name
         // this.jara=jara
-        console.log("this object is create done..." ," and my name is lion "+name)
+        console.log("this object is create done...", " and my name is lion " + name)
     }
 
-    eats(){
+    eats() {
         console.log("ami js laer n korte")
     }
-    pytohn(){
-        console,log("my favrete language is python ")
+    pytohn() {
+        console. log("my favrete language is python ")
     }
 }
 
-class king_lion extends animal{
-        constructor(name,jara){
-            super(name)
-        this.nam=name
-        this.jara=jara
-        console.log("this object is create done..." ," and my name is rabbit "+name +jara)
+class king_lion extends animal {
+    constructor(name, jara) {
+        super(name)
+        this.nam = name
+        this.jara = jara
+        console.log("this object is create done...", " and my name is rabbit " + name + jara)
+    }
+
+    pytohn() {
+
+        super.pytohn()
+        console. log("my favrete language is python  and iam also lern js for some munny")
     }
 
 }
 
 let a = new animal("bunny")
 
-let b =new king_lion("sera","nabil")
+a.name = "raja"
+
+let b = new king_lion("sera", "nabil")
 console.log(a)
 console.log(b)
 
