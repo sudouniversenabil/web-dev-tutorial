@@ -1,16 +1,22 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const exp = require('express');
+const app = exp();
+const port = 3000;
+app.use(exp.static('public')) // for static files like css, js, images etc. in public folder
+app.get("/", (req, res) => {
+  res.send("this is mine");
+})
 
-app.get('/', (req, res) => {
-  res.send('Hello World! can you see me')
+app.get("/nabil/:name", (req, res) => {
+  // res.send("this is nabil");
+  res.send(`this is nabil, ${req.params.name}!`);
+  console.log(req.params) // will output { slug: 'intro-to-padosi' }
+  console.log(req.query) // will output { mode: 'dark', region: 'in' }
+  // console.log(req)
+
 })
-app.get('/nabil', (req, res) => {
-  res.send('this is nabil')
-})
-app.get('/sikder', (req, res) => {
-  res.send('we are sikder')
+app.get("/sikder", (req, res) => {
+  res.send("this is sikder");
 })
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Server running at http://localhost:${port}/`);
 })
