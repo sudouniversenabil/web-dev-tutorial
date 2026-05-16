@@ -25,6 +25,11 @@ app.get("/bolog", (req, res) => {
   res.sendFile("templete/bolog.html",{root:__dirname})
   console.log("done")
 })
+
+app.get("/api",(req,res)=>{
+  res.json({a:"nabil",b:"sikder",c:"hallo word",g:["kobita","tasnin"]})
+  console.log("ok your api is done")
+})
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
