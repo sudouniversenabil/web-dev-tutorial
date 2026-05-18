@@ -1,8 +1,17 @@
 const express = require('express')
 const app = express()
 const port = 3000
+
+const bol = require('./routes/bol')
+
+
+
+
+
 // const local=173.1
 app.use(express.static('public')) // for static files like css, js, images etc. in public folder
+app.use('/bol', bol)
+
 
 app.get('/', (req, res) => {
   res.send('hallo world it is a get request')
@@ -16,10 +25,10 @@ app.put('/', (req, res) => {
   res.send('hallo world it is a put request')
 })
 
-// app.delete('/', (req, res) => {
-//   console.log("hey this is a delete request")
-//   res.send('hallo world it is a delete request')
-// })
+app.delete('/', (req, res) => {
+  console.log("hey this is a delete request")
+  res.send('hallo world it is a delete request')
+})
 
 app.get("/bolog", (req, res) => {
   res.sendFile("templete/bolog.html",{root:__dirname})
