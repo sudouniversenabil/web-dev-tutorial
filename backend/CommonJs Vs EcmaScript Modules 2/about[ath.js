@@ -7,4 +7,4 @@ console.log(path.extname(mypath))
 console.log(path.dirname(mypath))
 
 console.log(path.basename(mypath))
-console.log(path.join("/home/nabil/","docmimt\nabil"))
+console.log(path.join("/home/nabil/","docmimtbil"))
