@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 // Route
 app.get('/', (req, res) => {
 
-    let siteName = "Nabil Website";
+    let siteName = "Nabil Website and shidb";
     let searchText = "Search Here";
 
     res.render("index", {
