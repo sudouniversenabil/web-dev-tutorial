@@ -1,25 +1,21 @@
 const express = require('express');
 const app = express();
-
 const port = 3000;
-
-// EJS setup
-app.set('view engine', 'ejs');
-
-// Route
+// https://github.com/mde/ejs/wiki/Using-EJS-with-Express
+app.set("view engine", "ejs")
 app.get('/', (req, res) => {
-
-    let siteName = "Nabil Website and shidb";
-    let searchText = "Search Here";
-
-    res.render("index", {
-        siteName: siteName,
-        searchText: searchText
-    });
-
+  let nabil ="nabil"
+  let kobita= "kobita"
+  res.render('index',{nabil:nabil,kobita:kobita});
 });
 
-// Server
+app.get('/blog/:sulg', (req, res) => {
+  let nabil =req.params.sulg
+  let kobita= "kobita"
+  res.render('index',{nabil:nabil,kobita:kobita});
+});
+
+
 app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+  console.log(`Example app listening on port ${port}`);
 });
