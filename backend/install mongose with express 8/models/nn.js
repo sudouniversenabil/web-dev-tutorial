@@ -1,0 +1,8 @@
+const mongoose = require('mongoose');
+
+const testSchema = new mongoose.Schema({
+  name: String,
+  class:Number,
+  regu:Boolean
+});
+module.exports = mongoose.model('test',testSchema);
