@@ -4,7 +4,8 @@ function App() {
 
   return (
     <>
-      <Navber/>
+      <Navber work="world"/>
+      
     </>
   )
 }

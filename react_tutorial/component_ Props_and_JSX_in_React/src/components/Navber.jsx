@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Navber.css"
-function Navber() {
+function Navber(props) {
   return (
     <div>
       <nav>
@@ -10,6 +10,10 @@ function Navber() {
           <li>contatat</li>
         </ul>
       </nav>
+
+      
+        <h1>{props.work}</h1>
+      
     </div>
   )
 }
