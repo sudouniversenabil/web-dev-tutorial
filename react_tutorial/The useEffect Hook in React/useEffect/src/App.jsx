@@ -13,6 +13,10 @@ function App() {
   useEffect(()=>{
     alert("hey count is load and change")
   },[count])
+
+  // useEffect(()=>{
+  //   alert("agin change")
+  // },[color.work+count])
   
 
   return (
