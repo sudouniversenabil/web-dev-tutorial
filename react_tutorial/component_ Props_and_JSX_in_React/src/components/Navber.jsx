@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Navber.css"
-function Navber(props) {
+function Navber({props}) {
   return (
     <div>
       <nav>

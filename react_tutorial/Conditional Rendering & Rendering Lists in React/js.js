@@ -1,0 +1,1 @@
+5===5 ? console.log("okk") : null
