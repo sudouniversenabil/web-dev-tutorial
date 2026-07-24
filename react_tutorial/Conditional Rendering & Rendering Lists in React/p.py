@@ -1,1 +1,0 @@
-print("hallo") if (8==5) else print("ned")
