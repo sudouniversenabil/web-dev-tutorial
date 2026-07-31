@@ -5,7 +5,7 @@ import heroImg from './assets/hero.png'
 // import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
   const [name, setname] = useState("harry")
   const [form, setform] = useState({ email: "", phone: "" })
 
@@ -13,16 +13,11 @@ function App() {
     alert("hey i am click")
   }
 
-  const over = () => {
-    alert("iam e mouse over")
-  }
-
-  // name স্টেটের জন্য হ্যান্ডলার
   const handleNameChange = (e) => {
     setname(e.target.value)
   }
 
-  // form অবজেক্টের (email, phone) জন্য হ্যান্ডলার
+
   const new_add = (e) => {
     setform({ ...form, [e.target.name]: e.target.value })
     console.log(form)
@@ -34,29 +29,28 @@ function App() {
         <button onClick={handEvent}>click me </button>
       </div>
 
-      <div className='over' onMouseOver={over}>iam another event</div>
+      {/* <div className='over' onMouseOver={over}>iam another event</div> */}
 
       {/* Name Input */}
-      <input 
-        type="text" 
-        value={name} 
-        onChange={handleNameChange} 
+      <input
+        type="text"
+        value={name}
+        onChange={handleNameChange}
       />
 
       {/* Email Input */}
-      <input 
-        type="text" 
-        name='email' 
-        value={form.email || ""} 
-        onChange={new_add} 
+      <input
+        type="text"
+        name='email'
+        value={form.email || ""}
+        onChange={new_add}
       />
 
-      {/* Phone Input */}
-      <input 
-        type="text" 
-        name='phone' 
-        value={form.phone || ""} 
-        onChange={new_add} 
+      <input
+        type="text"
+        name='phone'
+        value={form.phone || ""}
+        onChange={new_add}
       />
     </>
   )
